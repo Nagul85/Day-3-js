@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let obj1 = { name: "Person1", age: 5 };
+let obj2 = { age: 5, name: "Person1" };
+
+// Convert the JSON objects to strings
+let obj1String = JSON.stringify(obj1);
+let obj2String = JSON.stringify(obj2);
+
+// Compare the strings
+if (obj1String === obj2String) {
+  console.log("The two JSON objects are equal.");
+} else {
+  console.log("The two JSON objects are not equal.");
+}
+
+    </script>
+</body>
+</html>
